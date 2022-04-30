@@ -32,7 +32,6 @@
     "gulp-newer": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
-    "gulp-pug": "latest",
     "gulp-purgecss": "^4.0.3",
     "gulp-rename": "latest",
     "gulp-replace": "latest",

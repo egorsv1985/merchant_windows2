@@ -25,6 +25,5 @@
 
 
 // block
-@import "./blocks/header";
-
-@import "./blocks/footer";
+@import "../module/blocks/blocks-base/header/header";
+@import "../module/blocks/blocks-base/footer/footer";

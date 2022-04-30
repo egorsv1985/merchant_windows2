@@ -1,3 +1,24 @@
+/**********************
+Конвертирование из px в rem 
+**********************/
+/*
+	Пример использования
+	div {
+		width: toRem(400);
+		height: toEm(400);
+	}
+*/
+@function toRem($value) {
+	$remValue: calc($value / 10) + rem;
+	@return $remValue;
+}
+
+@function toEm($value) {
+	$remValue: calc($value / $baseFontSize) + em;
+	@return $remValue;
+}
+
+
 @mixin flex ($justify-content: null, $align-items: null, $flex-wrap:null, $flex-direction: null) {
 	display: flex;
 	justify-content: $justify-content;

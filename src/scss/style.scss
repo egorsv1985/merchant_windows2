@@ -1,9 +1,8 @@
 // lib
 
 // abstracts
-
-@import "./abstracts/mixins";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 // base
 @import "./base/normalize";
@@ -16,10 +15,10 @@
 @import "./base/global";
 
 // components
-@import "./components/burger";
-@import "./components/link";
-@import "./components/button";
-@import "./components/inputs";
+@import "../module/components/burger/burger";
+@import "../module/components/link/link";
+@import "../module/components/button/button";
+@import "../module/components/inputs/inputs";
 
 // sections
 

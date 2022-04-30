@@ -9,7 +9,7 @@ export const path = {
 	build: {
 		js: `${buildFolder}/js/`,
 		css: `${buildFolder}/css/`,
-		html: `${buildFolder}/`,
+		html: `${buildFolder}/build_html/`,
 		images: `${buildFolder}/img/`,
 		fonts: `${buildFolder}/fonts/`,
 		files: `${buildFolder}/files/`
@@ -19,7 +19,7 @@ export const path = {
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,ico,png,gif,webp}`,
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
-		html: `${srcFolder}/*.html`,
+		html: `${srcFolder}/build_html/*.html`,
 		files: `${srcFolder}/files/**/*.*`,
 		svgicons: `${srcFolder}/img/svgicons/**/*.svg`
 	},

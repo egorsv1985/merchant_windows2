@@ -1,0 +1,30 @@
+// lib
+
+// abstracts
+
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base
+@import "./base/normalize";
+
+// @import "fonts";
+
+
+@import "./base/sections";
+@import "./base/tipography";
+@import "./base/global";
+
+// components
+@import "./components/burger";
+@import "./components/link";
+@import "./components/button";
+@import "./components/inputs";
+
+// sections
+
+
+// block
+@import "./blocks/header";
+
+@import "./blocks/footer";

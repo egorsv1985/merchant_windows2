@@ -27,7 +27,11 @@ temp
 temp-*
 node_modules
 build
+dist
 # Other
 npm-debug.log
 .idea
 package-lock.json
+gulp/version.json
+gulp/_version.json
+info.txt

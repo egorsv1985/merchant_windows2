@@ -14,7 +14,7 @@ export const scss = () => {
 	return app.gulp.src(app.path.src.scss, {
 		sourcemaps: app.isDev
 	})
-	.pipe(sourcemaps.init())
+		.pipe(sourcemaps.init())
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
 				title: "SCSS",
@@ -37,13 +37,14 @@ export const scss = () => {
 				overrideBrowserslist: ["last 3 version"],
 				cascade: true
 			})))
+		.pipe(sourcemaps.write('./maps'))
 		.pipe(app.gulp.dest(app.path.build.css)) // Не сжатый файл
+
 		.pipe(app.plugins.if(
 			app.isBuild, cleanCss())) // Сжатие файла
 		.pipe(rename({
 			extname: ".min.css"
 		}))
-		.pipe(sourcemaps.write())
 		.pipe(app.gulp.dest(app.path.build.css))
 		.pipe(app.plugins.browsersync.stream());
 }

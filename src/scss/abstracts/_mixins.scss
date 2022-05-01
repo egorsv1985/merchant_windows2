@@ -13,6 +13,15 @@
 	@return $remValue;
 }
 
+/**********************
+адаптифный шрифт
+**********************/
+@mixin adaptive-font($maxSizeFont, $minSizeFont, $maxWidth, $minWidth) {
+	$sizeFont: $maxSizeFont - $minSizeFont;
+	$maxWidth: $maxWidth - $minWidth;
+	font-size: calc(#{$minSizeFont + px} + #{$sizeFont} * ((100vw - #{$minWidth + px}) / #{$maxWidth}));
+}
+
 @function toEm($value) {
 	$remValue: calc($value / $baseFontSize) + em;
 	@return $remValue;

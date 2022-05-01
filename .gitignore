@@ -28,6 +28,7 @@ temp-*
 node_modules
 build
 dist
+bootstrap-5.1.3-examples
 # Other
 npm-debug.log
 .idea

@@ -1,0 +1,15 @@
+.contacts {
+	@include flex ($flex-direction: column);
+	// .contacts__title
+	&__title {}
+	// .contacts__list
+	&__list {
+		@include flex();
+	}
+	// .contacts__item
+	&__item {}
+	// .contacts__link
+	&__link {}
+	// .contacts__img
+	&__img {}
+}

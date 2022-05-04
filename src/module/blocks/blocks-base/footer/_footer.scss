@@ -1,1 +1,28 @@
+.footer {
+	// .footer__wrapper
+	&__wrapper {
+		@include flex();
+	}
+	// .footer__box
+	&__box {
+		@include flex();
+	}
+	// .footer__logo
+	&__logo {}
+	// .footer__img
+	&__img {}
+	// .footer__work
+	&__work {
+		@include flex($flex-direction: column);
+	}
+	// .footer__tel
+	&__tel {}
+	// .footer__desc
+	&__desc {}
+	// .footer__contacts
+	&__contacts {}
+}
+
+
+
 
